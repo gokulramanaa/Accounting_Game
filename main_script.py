@@ -587,11 +587,11 @@ def newfunc():
             global Label7
             if (stock == 1):
                 text7 = "\n You have chosen to stockpile the surplus, so your stockpile is now {stockpile} and the cost for {activity} activities done during the year is {resource} from the university point of view".format(stockpile = stockpile, resource = available, activity = activity)
-                Label7 = Label(Frame1, text = text7, wraplength=500, justify = LEFT, font=("Cambria", 15), bg="salmon", textvariable = text)
+                Label7 = Label(Frame1, text = text7, wraplength=500, justify = LEFT, font=("Cambria", 15), bg="salmon")
                 Label7.pack(side = BOTTOM)
             elif (stock == 2):
                 text8 = "\n You have chosen to allow the surplus to revert to university, so your stockpile is $0 and the cost for {activity} activities done during the year is {resource} from the university point of view".format(stockpile = stockpile, resource = available, activity = activity)
-                Label7 = Label(Frame1, text = text8, wraplength=500, justify = LEFT, font=("Cambria", 15), bg="salmon", textvariable = text)
+                Label7 = Label(Frame1, text = text8, wraplength=500, justify = LEFT, font=("Cambria", 15), bg="salmon")
                 Label7.pack(side = BOTTOM)
             return 1
         dummy1.has_been_called = False
@@ -607,15 +607,11 @@ def newfunc():
         Label7 = Label(TopFrame7, bg = "orange red")
         def sel():
             selection = "You selected the option " + str(var.get())
-            global stock 
+            global stock
             stock = var.get()
             stockpilef(stock, year, budget, available, demand, activity, stockpile, shortage, surplus)
             calculation()
             return 1
-        
-            text = StringVar()
-            TopFrame8 = Frame(Frame1, width = 750, height = 50)
-            TopFrame8.pack(side=TOP)
 
         def dummy(Frame1):
             dummy.has_been_called = True
