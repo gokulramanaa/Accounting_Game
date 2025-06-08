@@ -9,7 +9,7 @@ from tkinter import *
 import Labelclass as Lc
 
 def ImgFunct(master):
-    photo = PhotoImage(file="C:/Users/gokul/Documents/Projects/AccountingGame/imgs/inst.png")
+    photo = PhotoImage(file="Images/inst.PNG")
     w = Label(master, image=photo)
     w.photo = photo
     w.pack()

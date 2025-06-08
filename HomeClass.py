@@ -34,7 +34,7 @@ class FrameClass():
         Frame2.pack()
         Frame2.pack_propagate(0)
         print("hello")
-        photo = PhotoImage(file="C:/Users/gokul/Documents/Projects/AccountingGame/imgs/inst.png")
+        photo = PhotoImage(file="Images/inst.PNG")
         print(type(photo))
         w = Label(Frame2, image=photo)
         w.photo = photo
