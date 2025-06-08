@@ -7,7 +7,6 @@ Created on Sat Feb 24 17:35:38 2018
 from tkinter import *
 import pandas as pd
 import numpy as np
-import pandas as pd
 import random
 import openpyxl
 import webbrowser
